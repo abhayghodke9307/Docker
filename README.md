@@ -31,13 +31,10 @@ This project implements a simple HTTP server that responds to incoming GET reque
   - Request: `/data?n=1`
     Response: (Contents of file `/tmp/data/1.txt`)
 
-## Notes
-- The server is built using Python and Flask, but you can adapt it to other languages/frameworks as needed.
-- Ensure you have generated random text files for development purposes in the `/tmp/data/` directory.
-- The Dockerfile is compatible with both ARM and x86 architectures.
+
 
 
 
 run the project
-docker build -t your_image_name .
+docker build -t image_name .
 docker run -p 8080:8080 --memory 1500m --cpus 2 image_name
